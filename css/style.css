@@ -1,0 +1,166 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: white;
+    overflow-x: hidden;
+    
+}
+.header_part{
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    padding: 15px 4%;
+    align-items: center;
+        }
+.logo{
+    display: flex;
+    margin: 15px 40px ;
+}
+
+.navbar ul{
+    display: flex;
+    justify-content: center;
+    font-style: none;
+    gap: 40px;
+}
+.navbar ul li{
+    list-style: none;
+    text-align: center;
+    
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: #575757;
+    font-weight: 700;
+}
+.navbar ul li a:hover{
+    color:#0d4aac ;
+}
+
+.Register{
+    background-color: #1D4ED8;
+    color: white;
+    text-decoration: none;
+    padding: 8px 16px;
+    font-size: 13px;
+    border-radius: 10px;
+    border: none; 
+}
+.u_register{
+    position: relative; 
+    padding: 10px 35px;
+    z-index: 10;        
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.banner_part{
+    display: grid;
+    background-image: url('/assets/banner.jpg');
+    justify-content: center;
+    background-size: cover;
+    background-position: center;
+    height: 786px; 
+    min-height: 550px;
+    align-items: center;
+    text-align: center;
+}
+.banner_content{
+    position: absolute;
+    top: 450px;                
+    left: 50%;              
+    transform: translate(-50%, -50%);
+    color: white;             
+    text-align: center;                        
+}
+.banner_content h1{
+    margin-bottom: 20px;
+    color: white;
+    font-weight: bold;
+    font-size: 50px;
+}
+.banner_content p{
+    margin-bottom:120px;
+    font-size: 0.8rem;
+    padding: 0px 50px;
+}
+/* Speakers Section Styling */
+.speakers_content {
+    padding: 60px 8%;
+    background-color: #ffffff;
+    font-family: 'Inter', sans-serif;
+}
+
+.speaker_title {
+    text-align: center;
+    font-size: 36px;
+    font-weight: 800;
+    color: #000000;
+    margin-bottom: 40px;
+}
+
+/* Grid Layout for 4 Cards */
+.speakers_list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* এক লাইনে ২টি করে কার্ড থাকবে */
+    gap: 30px; /* কার্ডগুলোর মাঝখানের ফাকা জায়গা */
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Individual Card Styling */
+.card {
+    background: #ffffff;
+    border: 1px solid #eaeaea;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.card:hover {
+    box-shadow: 0 10px 20px rgba(168, 109, 109, 0.05);
+}
+
+.card_image {
+    width: 100%;
+    height: 320px; 
+    overflow: hidden;
+}
+
+.card_image img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    background-size: cover; 
+}
+
+.card_content {
+    padding: 25px;
+}
+
+.category {
+    display: block;
+    text-transform: uppercase;
+    color: #2563eb;
+    margin-bottom: 8px;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+}
+
+.name {
+    font-size: 18px;
+    font-weight: 700;
+    color: #0f172a;
+    margin-bottom: 6px;
+}
+
+.designation {
+    font-size: 13px;
+    color: #64748b; 
+    line-height: 1.4;
+}
+

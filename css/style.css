@@ -69,7 +69,7 @@ body {
 
 .banner_part {
     display: grid;
-    background-image: url('/assets/banner.jpg');
+    background-image: url('../assets/banner.jpg');
     justify-content: center;
     background-size: cover;
     background-position: center;
@@ -281,7 +281,7 @@ body {
     display: flex;
     gap: 45px;
     align-items: center;
-    margin: 20px 0px 0px 590px;
+    margin: 20px 0px 0px 350px;
 }
 
 /* Left Side: Pitch and Context */

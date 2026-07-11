@@ -5,7 +5,7 @@
     font-family: "Open Sans", sans-serif;
 }
 body{
-    background-color: white;
+    /* background-color: white; */
     overflow-x: hidden;
     
 }
@@ -234,3 +234,186 @@ body{
     text-decoration: none;
     font-weight: 700;
 }
+        /* AI challenging Part CTA Container */
+        .meeting-cta-container {
+            width: 100%;
+            max-width: 1200px;
+            background-color: #111827;
+            background-image: 
+                linear-gradient(135deg, rgba(17, 24, 39, 0.95), rgba(17, 24, 39, 0.85)),
+                radial-gradient(circle at 10% 90%, rgba(6, 182, 212, 0.12), transparent 45%);
+            border: 1px solid #1f2937;
+            border-bottom: 5px solid #06b6d4; /* Base accent strip */
+            border-radius: 16px;
+            padding: 50px;
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+            display: flex;
+            gap: 45px;
+            align-items: center;
+            margin: 20px 0px 0px 350px;
+        }
+
+        /* Left Side: Pitch and Context */
+        .cta-content {
+            flex: 1.2;
+        }
+
+        .badge {
+            display: inline-block;
+            background: rgba(56, 189, 248, 0.1);
+            color: #38bdf8;
+            font-size: 11px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            padding: 6px 14px;
+            border-radius: 20px;
+            margin-bottom: 20px;
+            border: 1px solid rgba(56, 189, 248, 0.25);
+        }
+
+        .cta-content h2 {
+            font-size: 34px;
+            font-weight: 800;
+            line-height: 1.25;
+            color: #ffffff;
+            margin-bottom: 16px;
+            letter-spacing: -0.5px;
+        }
+
+        .cta-content h2 span {
+            color: #06b6d4;
+        }
+
+        .cta-content p {
+            font-size: 15px;
+            color: #9ca3af;
+            line-height: 1.6;
+            margin-bottom: 28px;
+        }
+
+        /* Benefits Feature List using CSS Table Structure */
+        .feature-table {
+            display: table;
+            width: 100%;
+        }
+
+        .feature-row {
+            display: table-row;
+        }
+
+        .feature-cell {
+            display: table-cell;
+            padding-bottom: 12px;
+            font-size: 13px;
+            color: #e5e7eb;
+            font-weight: 500;
+        }
+
+        .feature-cell:first-child {
+            width: 24px;
+            color: #06b6d4;
+            font-size: 16px;
+            font-weight: bold;
+        }
+
+        /* Right Side: Interactive Selection Form Box */
+        .cta-form-box {
+            flex: 0.8;
+            background: rgba(31, 41, 55, 0.4);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            border-radius: 12px;
+            padding: 30px;
+            width: 100%;
+        }
+
+        .meeting-form {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+        }
+
+        .form-title {
+            font-size: 16px;
+            font-weight: 700;
+            color: #ffffff;
+            margin-bottom: 4px;
+        }
+
+        .form-group {
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
+        }
+
+        .form-group label {
+            font-size: 11px;
+            font-weight: 600;
+            color: #9ca3af;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .form-group select, 
+        .form-group input {
+            background-color: #0b0f19;
+            border: 1px solid #374151;
+            border-radius: 6px;
+            padding: 12px;
+            font-size: 14px;
+            color: #ffffff;
+            outline: none;
+            transition: border-color 0.2s ease, box-shadow 0.2s ease;
+            width: 100%;
+        }
+
+        .form-group select:focus, 
+        .form-group input:focus {
+            border-color: #06b6d4;
+            box-shadow: 0 0 0 3px rgba(6, 182, 212, 0.15);
+        }
+
+        .form-group select {
+            cursor: pointer;
+            appearance: none;
+            background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%239ca3af' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'><polyline points='6 9 12 15 18 9'></polyline></svg>");
+            background-repeat: no-repeat;
+            background-position: right 12px center;
+            background-size: 16px;
+        }
+
+        /* Interactive Submit Button */
+        .btn-schedule {
+            background-color: #06b6d4;
+            color: #0b0f19;
+            border: none;
+            border-radius: 6px;
+            padding: 14px;
+            font-size: 14px;
+            font-weight: 700;
+            cursor: pointer;
+            text-align: center;
+            transition: background-color 0.2s ease, transform 0.1s ease;
+            margin-top: 8px;
+        }
+
+        .btn-schedule:hover {
+            background-color: #22d3ee;
+        }
+
+        .btn-schedule:active {
+            transform: scale(0.99);
+        }
+
+        /* Responsive Breakpoint Matrix */
+        @media (max-width: 900px) {
+            .meeting-cta-container {
+                flex-direction: column;
+                padding: 35px 25px;
+                gap: 35px;
+            }
+
+            .cta-content h2 {
+                font-size: 28px;
+            }
+        }

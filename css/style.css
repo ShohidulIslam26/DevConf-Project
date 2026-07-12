@@ -56,6 +56,7 @@ body {
     font-size: large;
     border-radius: 10px;
     border: none;
+    transform: translate(-50%, -50%);
 }
 
 .u_register {
@@ -282,6 +283,7 @@ body {
     gap: 45px;
     align-items: center;
     margin: 20px 0px 0px 350px;
+    
 }
 
 /* Left Side: Pitch and Context */
